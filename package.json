@@ -1,12 +1,13 @@
 {
   "name": "dusty-frontend-school-environment",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config=webpack.development.config.js",
     "build:prod": "webpack",
     "lint": "eslint . && stylelint ./src/**/*.css",
+    "unit": "jest --coverage",
     "start": "webpack serve --config=webpack.development.config.js",
     "test": "jest --coverage && playwright test"
   },
